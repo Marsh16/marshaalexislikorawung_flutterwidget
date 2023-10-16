@@ -24,12 +24,11 @@ class _MissionPageState extends State<MissionPage> {
           title: const Text("Mission 1"),
           centerTitle: false,
         ), //appbar
-        floatingActionButton: Stack(
-          children: <Widget>[
-            Positioned(
-              top: 180.0,
-              right: 0.0,
-              child: FloatingActionButton(
+        floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
+        floatingActionButton: Container(
+          margin: EdgeInsets.only(top: 90, right: 0), // Add margin to the FAB
+          child: 
+              FloatingActionButton(
                 onPressed: () {
                   toggleColor();
                 },
@@ -39,8 +38,7 @@ class _MissionPageState extends State<MissionPage> {
                   borderRadius: BorderRadius.circular(28.0),
                 ),
               ),
-            ),
-          ],
+     
         ),
         body: Container(
           width: double.infinity,
