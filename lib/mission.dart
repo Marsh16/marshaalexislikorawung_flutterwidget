@@ -27,18 +27,16 @@ class _MissionPageState extends State<MissionPage> {
         floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
         floatingActionButton: Container(
           margin: EdgeInsets.only(top: 90, right: 0), // Add margin to the FAB
-          child: 
-              FloatingActionButton(
-                onPressed: () {
-                  toggleColor();
-                },
-                backgroundColor: Colors.white,
-                child: Icon(Icons.favorite, color: fabColor),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(28.0),
-                ),
-              ),
-     
+          child: FloatingActionButton(
+            onPressed: () {
+              toggleColor();
+            },
+            backgroundColor: Colors.white,
+            child: Icon(Icons.favorite, color: fabColor),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(28.0),
+            ),
+          ),
         ),
         body: Container(
           width: double.infinity,
