@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:marshaalexislikorawung_flutterwidget/booking.dart';
 
 class MissionPage extends StatefulWidget {
@@ -53,7 +52,7 @@ class _MissionPageState extends State<MissionPage> {
               right: 0.0, // Adjust as needed
              child: Container(
                 margin:
-                    EdgeInsets.only(top: 770, right: 0), // Add margin to the FAB
+                    EdgeInsets.only(top: 700, right: 0), // Add margin to the FAB
                     child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
